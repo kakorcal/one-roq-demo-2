@@ -25,20 +25,12 @@ class Main extends Component{
                  target='_blank'>
                  <button className='App__Button'>LEARN MORE</button>
               </a>
-            {/* fmb */}
               <Link to='/signup'>
                 <button className='App__Button'>INVEST</button>
               </Link>
-             {/*<button className='App__Button'>INVEST</button>*/}
             </div>
           </div>
         </div>
-        {/* inline */}
-        {/*
-        <div className="App__Inline-FMB">
-          <div className="fundpaas-widget-invOn__inlineContainer" data-offering-id="INVOFF-7QQFGEJINNUK2"></div>
-        </div>
-        */}
       </div>
     );
   }

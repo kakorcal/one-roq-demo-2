@@ -83,9 +83,7 @@ class Signup extends Component{
     
     if(!validationMessage) {
       var sId = null;
-      this.setState({
-        isLoading: true
-      });
+      this.setState({ isLoading: true });
       // can do call client api here before fundpaas api
       fetch('https://staging.fundpaas.com/api/logins/signups/investors', {
         method: 'POST',
