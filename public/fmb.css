@@ -1,0 +1,650 @@
+/*
+  Color scheme  
+  light gold: #eedb8c
+  pale gold: #c0b283
+  silk: #dcd0c0
+  paper: #f4f4f4
+  light grey: #d5d5d5
+  charcoal: #373737
+
+  purple gradient
+  light purple: #c77de4
+  dark purple: #833395
+  pink purple: #df68ca
+
+  black / white gradient
+  black: #222222
+  dark grey: #525252
+  grey: #7f7f7f
+  light grey: #d9d9d9
+  white: #f7f7f7
+
+  gold logo emblem:
+  light: #fce5ba
+  middle: #f1d3a2
+  dark: #ccaf76
+
+  logo text:
+  text: #4b4c4d
+  shadow: #bfbfc1
+ */
+
+/*
+Container
+ */
+
+#FUNDPAAS-CSS.fundpaas-core-ui-dialog,
+#FUNDPAAS-CSS.fundpaas-core-ui-dialog .ui-dialog-content {
+  border-radius: 3px;
+}
+
+/*
+Background
+ */
+
+#FUNDPAAS-CSS .invOn-mainLayoutView {
+  background-color: #222;
+  border: 5px solid #f7f7f7;
+  padding: 10px;
+}
+
+/*
+Notification
+ */
+
+#FUNDPAAS-CSS .fundpaas-core-notification, 
+#FUNDPAAS-CSS [name=notification], 
+#FUNDPAAS-CSS [name=emailNotification] {
+  color: #222;
+}
+
+/*
+Font / Text
+ */
+
+#FUNDPAAS-CSS .invOn-oneColumnLayoutView .invOn-oneColumnLayoutView__mainContentRegion h1,
+#FUNDPAAS-CSS .invOn-twoColumnLayoutView .invOn-twoColumnLayoutView__mainContentRegion h1,
+#FUNDPAAS-CSS .invOn-oneColumnLayoutView .invOn-oneColumnLayoutView__mainContentRegion h2,
+#FUNDPAAS-CSS .invOn-twoColumnLayoutView .invOn-twoColumnLayoutView__mainContentRegion h2,
+#FUNDPAAS-CSS .invOn-offeringProgressView [name=offeringSubscribedAmountPercentage],
+#FUNDPAAS-CSS .invOn-offeringProgressView {
+  color: #eedb8c;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Nevis',sans-serif;  
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#FUNDPAAS-CSS p,
+#FUNDPAAS-CSS .invOn-mainLayoutView__mainContentRegion,
+#FUNDPAAS-CSS .fundpaas-core-layout--2column {
+  color: #fff;
+  font-family: 'rufina', sans-serif;
+  font-size: 13px;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView .invOn-offeringProgressView__offeringProgress__meters {
+  background: #373737;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView [name=offeringSubscribedAmountPercentage],
+#FUNDPAAS-CSS .invOn-offeringProgressView {
+  font-size: 11px;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView [name=offeringSubscribedAmountPercentage] {
+  line-height: 36px;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView meter {
+  top: 1px;
+}
+
+#FUNDPAAS-CSS .invOn-offeringProgressView meter.is-normal {
+  background: #fa8e2a;
+}
+
+/*
+Button
+ */
+
+#FUNDPAAS-CSS .invOn-initialPageView button, 
+#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices, 
+#FUNDPAAS-CSS .fundpaas-core-form__controls button[type='submit'], 
+#FUNDPAAS-CSS label.fundpaas-core-form__uploadFile div {
+  background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
+  font-size: 13px;
+  border: none;
+  letter-spacing: 1px;
+  font-family: 'nevis', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+}
+
+#FUNDPAAS-CSS .invOn-initialPageView button:hover,
+#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices:hover,
+#FUNDPAAS-CSS .fundpaas-core-form__controls button[type='submit']:hover,
+#FUNDPAAS-CSS label.fundpaas-core-form__uploadFile div:hover {
+  background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
+  cursor: pointer;
+}
+
+#FUNDPAAS-CSS .invOn-initialPageView button:active,
+#FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices:active {
+  position: relative;
+  top: 2px;
+}
+
+/* x button */
+/* https://codepen.io/yoksel/details/JDqvs/ */
+#FUNDPAAS-CSS.fundpaas-core-ui-dialog .ui-dialog-titlebar-close {
+  margin: 4px 8px 0 auto;
+  width: 14px;
+  height: 14px;
+}
+
+#FUNDPAAS-CSS.fundpaas-core-ui-dialog .ui-dialog-titlebar-close.ui-button-icon-only .ui-button-icon-primary::before {
+  content: url(data:image/svg+xml,%3Csvg%20viewPort%3D%220%200%2012%2012%22%20version%3D%221.1%22%0A%20%20%20%20%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Cline%20x1%3D%221%22%20y1%3D%2211%22%20%0A%20%20%20%20%20%20%20%20%20%20x2%3D%2211%22%20y2%3D%221%22%20%0A%20%20%20%20%20%20%20%20%20%20stroke%3D%22white%22%20%0A%20%20%20%20%20%20%20%20%20%20stroke-width%3D%223%22/%3E%0A%20%20%20%20%3Cline%20x1%3D%221%22%20y1%3D%221%22%20%0A%20%20%20%20%20%20%20%20%20%20x2%3D%2211%22%20y2%3D%2211%22%20%0A%20%20%20%20%20%20%20%20%20%20stroke%3D%22white%22%20%0A%20%20%20%20%20%20%20%20%20%20stroke-width%3D%223%22/%3E%0A%3C/svg%3E);
+}
+
+#FUNDPAAS-CSS .fundpaas-core-form__controls button[type='button'] {
+  font-size: 16px;
+}
+
+/*
+Links
+ */
+
+#FUNDPAAS-CSS .invOn-loginAsideView nav a, 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a, 
+#FUNDPAAS-CSS .invOn-loginAsideView nav button, 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav button,
+#FUNDPAAS-CSS .invOn-initialPageView .fundpaas-core-form__controls > a,
+#FUNDPAAS-CSS .fundpaas-core-link, 
+#FUNDPAAS-CSS a:link, 
+#FUNDPAAS-CSS a:visited {
+  font-family: 'rufina', sans-serif;
+  color: #fff;
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+#FUNDPAAS-CSS .invOn-loginAsideView nav a:hover, 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a:hover, 
+#FUNDPAAS-CSS .invOn-loginAsideView nav button:hover, 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav button:hover,
+#FUNDPAAS-CSS .invOn-initialPageView .fundpaas-core-form__controls > a:hover,
+#FUNDPAAS-CSS .fundpaas-core-link:hover, 
+#FUNDPAAS-CSS a:hover, 
+#FUNDPAAS-CSS a:hover {
+  background-color: transparent;
+  color: #fa8e2a;
+  border-bottom-color: none;
+}
+
+/*
+Input fields
+ */
+
+#FUNDPAAS-CSS input[type=text]:focus, 
+#FUNDPAAS-CSS input[type=email]:focus, 
+#FUNDPAAS-CSS input[type=tel]:focus, 
+#FUNDPAAS-CSS input[type=url]:focus, 
+#FUNDPAAS-CSS input[type=date]:focus, 
+#FUNDPAAS-CSS input[type=password]:focus, 
+#FUNDPAAS-CSS select:focus, 
+#FUNDPAAS-CSS textarea:focus,
+#FUNDPAAS-CSS input[type=text]:required:focus,
+#FUNDPAAS-CSS input[type=email]:required:focus,
+#FUNDPAAS-CSS input[type=tel]:required:focus,
+#FUNDPAAS-CSS input[type=url]:required:focus,
+#FUNDPAAS-CSS input[type=date]:required:focus,
+#FUNDPAAS-CSS input[type=password]:required:focus,
+#FUNDPAAS-CSS select:required:focus,
+#FUNDPAAS-CSS textarea:required:focus,
+#FUNDPAAS-CSS input[type=text][required]:focus,
+#FUNDPAAS-CSS input[type=email][required]:focus,
+#FUNDPAAS-CSS input[type=tel][required]:focus,
+#FUNDPAAS-CSS input[type=url][required]:focus,
+#FUNDPAAS-CSS input[type=date][required]:focus,
+#FUNDPAAS-CSS input[type=password][required]:focus,
+#FUNDPAAS-CSS select[required]:focus,
+#FUNDPAAS-CSS textarea[required]:focus {
+  box-shadow: inset 0 0 0 1px #fa8e2a;
+}
+
+/*
+Table
+ */
+
+#FUNDPAAS-CSS table {
+  border: none;
+}
+
+#FUNDPAAS-CSS input[type=text],
+#FUNDPAAS-CSS input[type=email],
+#FUNDPAAS-CSS input[type=tel],
+#FUNDPAAS-CSS input[type=url],
+#FUNDPAAS-CSS input[type=date],
+#FUNDPAAS-CSS input[type=password],
+#FUNDPAAS-CSS select,
+#FUNDPAAS-CSS textarea {
+  font-family: 'rufina', sans-serif;
+}
+
+#FUNDPAAS-CSS table.fundpaas-core-table--solidLightBackdrop,
+#FUNDPAAS-CSS table.fundpaas-core-form.fundpaas-core-form--labelAbove label, 
+#FUNDPAAS-CSS table.fundpaas-core-form .fundpaas-core-form__instructions td {
+  color: #fff;
+  font-family: 'rufina', sans-serif;
+  background: #222;
+}
+
+#FUNDPAAS-CSS label.fundpaas-core-form__uploadFile span {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#FUNDPAAS-CSS table.fundpaas-core-table--lightBackdrop tbody tr {
+  background: #f7f7f7;
+}
+
+#FUNDPAAS-CSS table.fundpaas-core-table--recordList thead tr {
+  background: #ffffe0;
+}
+
+#FUNDPAAS-CSS table.fundpaas-core-table--lightBackdrop thead tr {
+  color: #000;
+}
+
+#FUNDPAAS-CSS tbody label.fundpaas-core-form__uploadFile div {
+  border-radius: 0;
+}
+
+#FUNDPAAS-CSS table.fundpaas-core-form tbody td,
+#FUNDPAAS-CSS .fundpaas-core-form tbody td label, 
+#FUNDPAAS-CSS table.fundpaas-core-table--recordList thead tr,
+#FUNDPAAS-CSS table.fundpaas-core-table--recordList tbody tr td,
+#FUNDPAAS-CSS table.fundpaas-core-table--recordList tbody tr td a{
+  color: #000;
+  font-family: 'rufina', sans-serif;
+}
+
+/*
+Header
+ */
+
+/*
+Sidebar
+ */
+
+#FUNDPAAS-CSS .invOn-twoColumnLayoutView__asideRegion {
+  background: #222;
+}
+
+#FUNDPAAS-CSS .header-fundpaas-logo, 
+#FUNDPAAS-CSS .header-custom-logo {
+  text-align: center;
+}
+
+#FUNDPAAS-CSS .header-fundpaas-logo img, 
+#FUNDPAAS-CSS .header-custom-logo img {
+  border-radius: 3px;
+  width: auto;
+}
+
+#FUNDPAAS-CSS .invOn-workflowStepsView li {
+  color: #fff;
+  font-family: 'rufina', sans-serif;
+}
+
+#FUNDPAAS-CSS .invOn-workflowStepsView .is-active {
+  color: #fa8e2a;
+}
+
+#FUNDPAAS-CSS .invOn-loginAsideView nav div[name=username], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav div[name=username] {
+  color: #fff;
+}
+
+#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=myPortal], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=myPortal],
+#FUNDPAAS-CSS .invOn-loginAsideView nav a[name=aboutFundpaas], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav a[name=aboutFundpaas],
+#FUNDPAAS-CSS .invOn-loginAsideView nav button[name=help], 
+#FUNDPAAS-CSS .invOn-workflowStepsView nav button[name=help] {
+  display: none;
+}
+
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-loginAsideView nav a[name=termsAndConditions], 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-workflowStepsView nav a[name=termsAndConditions],
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-loginAsideView nav a[name=privacyPolicy], 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-workflowStepsView nav a[name=privacyPolicy] {
+  display: block;
+}
+
+/*
+Footer
+ */
+
+#FUNDPAAS-CSS .invOn-oneColumnLayoutView__footerRegion, 
+#FUNDPAAS-CSS .invOn-twoColumnLayoutView__footerRegion {
+  padding: 12px 10px 0 10px;
+  height: 36px;
+  background-color: #f7f7f7;
+  border-top: none;
+  color: #000;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView {
+  font-family: 'rufina', sans-serif;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link,
+#FUNDPAAS-CSS .invOn-footerRegionView a:link, 
+#FUNDPAAS-CSS .invOn-footerRegionView a:visited {
+  color: #000;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-core-link:hover,
+#FUNDPAAS-CSS .invOn-footerRegionView a:hover, 
+#FUNDPAAS-CSS .invOn-footerRegionView a:hover {
+  color: #fa8e2a;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-company span,
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-year span {
+  display: none;
+}
+
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-year:after {
+  content: "2017";
+}
+/*
+#FUNDPAAS-CSS .invOn-footerRegionView .fundpaas-copyright-company:after {
+  content: "ONE ROQ";
+}
+*/
+
+/*
+invOn-investorTypeView__choiceContainer
+ */
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link {
+  color: #000;
+}
+
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link:hover {
+  color: #fa8e2a;
+}
+
+/*
+invOn-investorTypeView
+ */
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
+   background-color: #f7f7f7;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer p {
+   color: #000;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer img {
+   filter: sepia(1);
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices {
+   font-size: 10px;
+ }
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
+  background-color: #222;
+  width: 100%;
+  position: relative;
+}
+
+ #FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-investorTypeView__choiceContainer {
+   background-color: #000;
+   width: 100%;
+   position: relative;
+ }
+#FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer:hover {
+  background-color: #222;
+}
+
+ #FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-investorTypeView__choiceContainer:hover {
+   background-color: #000;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer.invOn-investorTypeView__choice,
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer img,
+ #FUNDPAAS-CSS .invOn-investorTypeView__additionalChoices {
+   display: none;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__accreditedInvestorDefinition {
+   display: block;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link[data-value='PA'] {
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link[data-value='PN'] {
+   position: absolute;
+   top: 0;
+   right: 0;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link {
+   background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
+   font-size: 13px;
+   border: none;
+   letter-spacing: 1px;
+   font-family: 'nevis', sans-serif;
+   color: #000;
+   text-transform: uppercase;
+   border-radius: 3px;
+   border: none;
+   text-decoration: none;
+   height: 60px;
+   padding: 10px 20px;
+   width: 300px;
+   line-height: 60px;
+   display: inline-block;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link:hover {
+   background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
+   cursor: pointer;
+   color: #000;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer .fundpaas-core-link:active {
+   positive: relative;
+   top: 2px;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer {
+   height: auto;
+ }
+
+ #FUNDPAAS-CSS .invOn-investorTypeView__choiceContainer>div {
+   height: auto;
+   min-height: auto;
+ }
+
+/*
+invOn-verifyFinancesView
+ */
+
+#FUNDPAAS-CSS .invOn-verifyFinancesTaxReturnsView__mainForm td:nth-child(2) label {
+  color: #000;
+  font-family: 'rufina', sans-serif;  
+  padding: 3px 0;
+}
+
+#FUNDPAAS-CSS .invOn-verifyFinancesAgentLetterView .invOn-verifyFinancesAgentLetterView__fileButtonWrapper {
+  background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
+  font-size: 13px;
+  border: none;
+  letter-spacing: 1px;
+  font-family: 'nevis', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  line-height: 33px;
+  padding: 0 1em;
+  min-height: 33px;
+}
+
+#FUNDPAAS-CSS .invOn-verifyFinancesAgentLetterView .invOn-verifyFinancesAgentLetterView__fileButtonWrapper:hover {
+  background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
+  cursor: pointer;
+}
+
+#FUNDPAAS-CSS .invOn-verifyFinancesAgentLetterView .invOn-verifyFinancesAgentLetterView__fileButtonWrapper:active {
+  position: relative;
+  top: 2px; 
+}
+
+#FUNDPAAS-CSS .invOn-verifyFinancesAgentLetterView__fileName {
+  color: #fff;
+  font-family: 'rufina', sans-serif;
+  font-size: 13px; 
+  left: 140px;
+  top: 8px;
+}
+
+/*
+invOn-fundingMethodView
+ */
+
+#FUNDPAAS-CSS .invOn-fundingMethodView--accountAlreadyExists td div {
+  padding-left: 5px;
+}
+
+#FUNDPAAS-CSS .invOn-fundingMethodView__signature {
+  background-color: #f7f7f7;
+  color: #000;
+  font-family: 'rufina', sans-serif;
+  font-size: 13px; 
+}
+
+#FUNDPAAS-CSS .invOn-fundingMethodView__signature p,
+#FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] p span, 
+#FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] label[data-for=signatureText] {
+  color: #000;
+  font-family: 'rufina', sans-serif; 
+}
+
+#FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] label[data-for=signatureText] {
+  margin-top: 5px;
+}
+
+/*
+invOn-signAgreementView
+ */
+
+#FUNDPAAS-CSS .invOn-signAgreementView h1 {
+  border-bottom: 1px solid #fff;
+}
+
+#FUNDPAAS-CSS .invOn-signAgreementView__agreementText {
+  border: none;
+  background: #fff;
+}
+
+#FUNDPAAS-CSS .invOn-signAgreementView__agreementText p {
+  all: initial;
+  line-height: 1.5;
+}
+
+#FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] {
+  background-color: #f7f7f7;
+  margin-top: 15px;
+}
+
+#FUNDPAAS-CSS .invOn-signAgreementView__agreementText .fundpaas-core__checkboxRegionView label,
+#FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] {
+  background-color: #f7f7f7;
+  color: #000;
+  font-family: 'rufina', sans-serif;
+  font-size: 13px;  
+}
+
+#FUNDPAAS-CSS [data-template-include="fundpaas-core-coreTemplates-signatureView"] p {
+  color: #000; 
+}
+
+/*
+invOn-confirmationView
+ */
+
+#FUNDPAAS-CSS .invOn-confirmationView__socialMedia {
+  margin-top: 15px;
+}
+
+/*
+invOn-nonAccreditedInvestorView
+ */
+
+#FUNDPAAS-CSS .invOn-nonAccreditedInvestorView h3,
+#FUNDPAAS-CSS table.fundpaas-core-form.fundpaas-core-form--labelAbove .invOn-nonAccreditedInvestorView__investmentAmounts__breakdown label {
+  color: #fff;
+  font-family: 'rufina', sans-serif; 
+}
+
+#FUNDPAAS-CSS .invOn-nonAccreditedInvestorView button[type=submit],
+#FUNDPAAS-CSS .invOn-nonAccreditedInvestorView__intrastateInvestmentsRegion button {
+  background: linear-gradient(to bottom, #eedb8c 0%, #ca9f56 49%, #b59444 100%);
+  font-size: 13px;
+  border: none;
+  letter-spacing: 1px;
+  font-family: 'nevis', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  line-height: 33px;
+  padding: 0 1em;
+  min-height: 33px;
+}
+
+#FUNDPAAS-CSS .invOn-nonAccreditedInvestorView button[type=submit]:hover,
+#FUNDPAAS-CSS .invOn-nonAccreditedInvestorView__intrastateInvestmentsRegion button:hover {
+  background: linear-gradient(to bottom, #b59444 0%, #ca9f56 49%);
+  cursor: pointer; 
+}
+
+#FUNDPAAS-CSS .invOn-nonAccreditedInvestorView button[type=submit]:active,
+#FUNDPAAS-CSS .invOn-nonAccreditedInvestorView__intrastateInvestmentsRegion button:active {
+  position: relative;
+  top: 2px; 
+}
+
+#FUNDPAAS-CSS .invOn-intrastateInvestmentsItemView button[name=removeIntrastateInvestment] {
+  background: #ca9f56;
+}
+
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-mainLayoutView {
+  background-color: #000;
+  border: none;
+}
+
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-oneColumnLayoutView__footerRegion, 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-twoColumnLayoutView__footerRegion {
+  display: none;
+}
+
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline .invOn-twoColumnLayoutView__asideRegion,
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline table.fundpaas-core-table--solidLightBackdrop, 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline table.fundpaas-core-form.fundpaas-core-form--labelAbove label, 
+#FUNDPAAS-CSS.fundpaas-widget-invOn__inlineContainer.invOn--inline table.fundpaas-core-form .fundpaas-core-form__instructions td {
+  background-color: #000;
+}
